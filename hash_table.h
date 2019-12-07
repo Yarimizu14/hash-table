@@ -15,4 +15,19 @@ int *get(node** t, char* key);
 void del(node** t, char* key);
 void print_hash_table(node** t);
 
+// Linear Probing Open Addressing
+typedef enum state_ {
+    Empty,
+    Used,
+    Deleted,
+} state;
+
+typedef struct lp_node_ {
+    char* key;
+    int val;
+    state st;
+} lp_node;
+
+lp_node **new_lp_hash_table();
+
 #endif
