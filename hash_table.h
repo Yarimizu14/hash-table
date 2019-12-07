@@ -13,5 +13,6 @@ node **new_hash_table();
 void insert(node** t, char* key, int val);
 int *get(node** t, char* key);
 void del(node** t, char* key);
+void print_hash_table(node** t);
 
 #endif

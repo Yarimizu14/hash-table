@@ -75,6 +75,7 @@ void del(node** t, char* key) {
             } else {
                 prev->next = c->next;
             }
+            free(c);
             printf("Key %s is deleted\n", key);
             return;
         }
